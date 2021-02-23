@@ -1,0 +1,116 @@
+# Concepts addressed:shell direction metacharacter 
+top - 20:50:08 up  3:51,  0 users,  load average: 8.56, 8.29, 8.60
+Tasks:   4 total,   1 running,   3 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.0 us, 14.1 sy,  0.0 ni, 45.9 id,  0.0 wa,  0.0 hi,  0.0 si,
+KiB Mem : 26694640 total,  4315972 free, 10721964 used, 11656704 buff/c
+KiB Swap:        0 total,        0 free,        0 used. 17480388 avail 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ 
+      1 runner    20   0 1536088  20740  11924 S   0.0  0.1   0:04.29 
+     13 runner    20   0   20184   3436   3208 S   0.0  0.0   0:00.00 
+     40 runner    20   0   20184   3904   3464 S   0.0  0.0   0:00.00 
+     44 runner    20   0   40372   3628   3156 R   0.0  0.0   0:00.01 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~/command-line-9-12-reyes032$ xlogo
+~/command-line-9-12-reyes032$ 
+~/command-line-9-12-reyes032$ xlog
+bash: xlog: command not found
+~/command-line-9-12-reyes032$ xlogo
+Warning: Cannot convert string "xlogo32" to type Pixmap
+
+^C          
+~/command-line-9-12-reyes032$ xlogo &
+[1] 132
+~/command-line-9-12-reyes032$ Warning: Cannot convert string "xlogo32" to type Pixmap
+~/command-line-9-12-reyes032$ ps
+    PID TTY          TIME CMD
+     74 pts/3    00:00:00 bash
+    199 pts/3    00:00:00 ps
+[1]+  Done                    xlogo
+~/command-line-9-12-reyes032$ jobs
+~/command-line-9-12-reyes032$ jobs
+~/command-line-9-12-reyes032$ fg %1
+bash: fg: %1: no such job
+~/command-line-9-12-reyes032$ xlogo
+Warning: Cannot convert string "xlogo32" to type Pixmap
+pixmap
+^C
+~/command-line-9-12-reyes032$ xlogo &
+[1] 201
+~/command-line-9-12-reyes032$ Warning: Cannot convert string "xlogo32" to type Pixmap
+~/command-line-9-12-reyes032$ ^C
+~/command-line-9-12-reyes032$ ps
+    PID TTY          TIME CMD
+     74 pts/3    00:00:00 bash
+    201 pts/3    00:00:00 xlogo
+    224 pts/3    00:00:00 ps
+~/command-line-9-12-reyes032$ jobs
+[1]+  Running                 xlogo &
+~/command-line-9-12-reyes032$ jobs
+[1]+  Running                 xlogo &
+~/command-line-9-12-reyes032$ fg %1
+xlogo
+^C
+~/command-line-9-12-reyes032$ xlogo
+Warning: Cannot convert string "xlogo32" to type Pixmap
+^Z
+[1]+  Stopped                 xlogo
+~/command-line-9-12-reyes032$ bg %1
+[1]+ xlogo &
+~/command-line-9-12-reyes032$ xlogo &
+[2] 234
+~/command-line-9-12-reyes032$ Warning: Cannot convert string "xlogo32" to type Pixmap
+^C
+~/command-line-9-12-reyes032$ kill -1 234
+~/command-line-9-12-reyes032$ xlogo &
+[3] 235
+[2]   Hangup                  xlogo
+~/command-line-9-12-reyes032$ Warning: Cannot convert string "xlogo32" to type Pixmap
+^C
+~/command-line-9-12-reyes032$ kill -INT 235
+~/command-line-9-12-reyes032$ 
+[3]+  Interrupt               xlogo
+~/command-line-9-12-reyes032$ xlogo &
+[2] 236
+~/command-line-9-12-reyes032$ Warning: Cannot convert string "xlogo32" to type Pixmap
+^C
+~/command-line-9-12-reyes032$ kill -SIGINT 236
+~/command-line-9-12-reyes032$ 
+[2]+  Interrupt               xlogo
+~/command-line-9-12-reyes032$ xlogo &
+[2] 245
+~/command-line-9-12-reyes032$ Warning: Cannot convert string "xlogo32" to type Pixmap
+^C
+~/command-line-9-12-reyes032$ xlogo &
+[3] 246
+~/command-line-9-12-reyes032$ Warning: Cannot convert string "xlogo32" to type Pixmap
+^C
+~/command-line-9-12-reyes032$ killall xlogo
+[1]   Terminated              xlogo
+[2]-  Terminated              xlogo
+~/command-line-9-12-reyes032$ ^C
+[3]+  Terminated              xlogo
+~/command-line-9-12-reyes032$ ^C
+~/command-line-9-12-reyes032$ 
