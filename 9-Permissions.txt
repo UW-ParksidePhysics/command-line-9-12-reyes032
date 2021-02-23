@@ -1,1 +1,101 @@
-
+# Concepts addressed: prompt, shell, file directory,redirection
+~/command-line-9-12-Marvalena$ file /etc/shadow
+/etc/shadow: regular file, no read permission
+~/command-line-9-12-Marvalena$ more /etc/shadow
+more: cannot open /etc/shadow: Permission denied
+~/command-line-9-12-Marvalena$ id
+uid=1000(runner) gid=1000(runner) groups=1000(runner)
+~/command-line-9-12-Marvalena$ > foo.txt
+~/command-line-9-12-Marvalena$ ls -l foo.txt
+-rw-r--r-- 1 runner runner 0 Feb 18 20:52 foo.txt
+~/command-line-9-12-Marvalena$ > foo.txt
+~/command-line-9-12-Marvalena$ ls -l foo.txt
+-rw-r--r-- 1 runner runner 0 Feb 18 20:53 foo.txt
+~/command-line-9-12-Marvalena$ chmod 600 foo.txt
+~/command-line-9-12-Marvalena$ ls -l foo.txt
+-rw------- 1 runner runner 0 Feb 18 20:53 foo.txt
+~/command-line-9-12-Marvalena$ rm -f foo.txt
+~/command-line-9-12-Marvalena$ umask
+0022
+~/command-line-9-12-Marvalena$ > foo.txt
+~/command-line-9-12-Marvalena$ ls -l foo.txt
+-rw-r--r-- 1 runner runner 0 Feb 18 20:55 foo.txt
+~/command-line-9-12-Marvalena$ rm foo.txt
+~/command-line-9-12-Marvalena$ umask 0000
+~/command-line-9-12-Marvalena$ > foo.txt
+~/command-line-9-12-Marvalena$ ls -l foo.txt
+-rw-rw-rw- 1 runner runner 0 Feb 18 20:56 foo.txt
+~/command-line-9-12-Marvalena$ rm foo.txt; umask 0002
+~/command-line-9-12-Marvalena$ su -
+Password: 
+su: Authentication failure
+~/command-line-9-12-Marvalena$ #  exit
+~/command-line-9-12-Marvalena$ su -c 'ls -l /root/*'
+Password: 
+su: Authentication failure
+~/command-line-9-12-Marvalena$  sudo backup_script
+bash: sudo: command not found
+~/command-line-9-12-Marvalena$ sudo backup_script
+bash: sudo: command not found
+~/command-line-9-12-Marvalena$ sudo -l 
+bash: sudo: command not found
+~/command-line-9-12-Marvalena$ sudo cp myfile.txt ~tony
+bash: sudo: command not found
+~/command-line-9-12-Marvalena$ sudo ls -l ~tony/myfile.txt
+bash: sudo: command not found
+~/command-line-9-12-Marvalena$ sudo cho tony: ~tony/myfile.txt
+bash: sudo: command not found
+~/command-line-9-12-Marvalena$ sudo ls -l ~tony/myfile.txt
+bash: sudo: command not found
+~/command-line-9-12-Marvalena$ su -c 'ls -l /root/*'
+Password: 
+su: Authentication failure
+~/command-line-9-12-Marvalena$ su -
+Password: 
+su: Authentication failure
+~/command-line-9-12-Marvalena$ su -
+Password: 
+su: Authentication failure
+~/command-line-9-12-Marvalena$ su -
+Password: 
+su: Authentication failure
+~/command-line-9-12-Marvalena$  sudo -l
+bash: sudo: command not found
+~/command-line-9-12-Marvalena$ sudo mkdir /usr/local/share/music
+bash: sudo: command not found
+~/command-line-9-12-Marvalena$ ls -d /usr/local/share/music
+ls: cannot access '/usr/local/share/music': No such file or directory
+~/command-line-9-12-Marvalena$ sudo chown :music /usr/local/share/music
+bash: sudo: command not found
+~/command-line-9-12-Marvalena$ sudo chown 775 /usr/local/share/music
+bash: sudo: command not found
+~/command-line-9-12-Marvalena$ ls -l /usr/local/share/music
+ls: cannot access '/usr/local/share/music': No such file or directory
+~/command-line-9-12-Marvalena$ > /usr/local/share/music/test_file
+bash: /usr/local/share/music/test_file: No such file or directory
+~/command-line-9-12-Marvalena$ ls -l /usr/local/share/music
+ls: cannot access '/usr/local/share/music': No such file or directory
+~/command-line-9-12-Marvalena$ sudo chmod g+s /usr/local/share/music
+bash: sudo: command not found
+~/command-line-9-12-Marvalena$ ls -ld /usr/local/share/music
+ls: cannot access '/usr/local/share/music': No such file or directory
+~/command-line-9-12-Marvalena$ umask 0002
+~/command-line-9-12-Marvalena$ rm /usr/local/share/music/test_file
+rm: cannot remove '/usr/local/share/music/test_file': No such file or directory
+~/command-line-9-12-Marvalena$ > /usr/local/share/music/test_file
+bash: /usr/local/share/music/test_file: No such file or directory
+~/command-line-9-12-Marvalena$ mkdir /usr/local/share/music/test_dir
+mkdir: cannot create directory ‘/usr/local/share/music/test_dir’: No such file or directory
+~/command-line-9-12-Marvalena$ ls -l /usr/local/share/music
+ls: cannot access '/usr/local/share/music': No such file or directory
+~/command-line-9-12-Marvalena$ passwd
+Changing password for runner.
+(current) UNIX password: 
+passwd: Authentication token manipulation error
+passwd: password unchanged
+~/command-line-9-12-Marvalena$ passwd
+Changing password for runner.
+(current) UNIX password: 
+passwd: Authentication token manipulation error
+passwd: password unchanged
+~/command-line-9-12-Marvalena$ 
