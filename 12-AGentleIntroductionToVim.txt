@@ -1,1 +1,47 @@
-
+#Course Concepts: Prompt, Shell, Argument, Text Editor
+total 1009516
+-rwxr-xr-x 1 root root       51384 Jan 18  2018 [
+-rwxr-xr-x 1 root root          96 Sep 30 13:38 2to3-2.7
+the quick brown fox jumped over the lazy dog
+lrwxrwxrwx 1 root root          25 Feb 13 03:34 aclocal -> /etc/alternatives/aclocal
+-rwxr-xr-x 1 root root       36792 Mar 25  2018 aclocal-1.15
+-rwxr-xr-x 1 root root        7415 Aug  7  2020 add-apt-repository
+-rwxr-xr-x 1 root root       22608 Sep 16 18:43 addpart
+lrwxrwxrwx 1 root root          26 Jun 18  2020 addr2line -> x86_64-linux-gnu-addr2line
+-rwxr-xr-x 1 root root       91808 Oct 16  2017 ag
+-rwxr-xr-x 1 root root          73 Dec 10 04:48 al
+-rwxr-xr-x 1 root root          73 Dec 10 04:48 al2
+-rwxr-xr-x 1 root root       10232 Apr 21  2017 appres
+-rwxr-xr-x 1 root root          80 Dec 10 04:48 aprofutil
+lrwxrwxrwx 1 root root           6 Aug  4  2018 apropos -> whatis
+-rwxr-xr-x 1 root root       14424 Dec  7 11:13 apt
+lrwxrwxrwx 1 root root          18 Aug  7  2020 apt-add-repository -> add-apt-repository
+-rwxr-xr-x 1 root root       80032 Dec  7 11:13 apt-cache
+-rwxr-xr-x 1 root root       22688 Dec  7 11:13 apt-cdrom
+-rwxr-xr-x 1 root root       22616 Dec  7 11:13 apt-config
+-rwxr-xr-x 1 root root       22688 Dec  7 11:13 apt-extracttemplates
+-rwxr-xr-x 1 root root      239776 Dec  7 11:13 apt-ftparchive
+-rwxr-xr-x 1 root root       43168 Dec  7 11:13 apt-get
+-rwxr-xr-x 1 root root       27391 Dec  7 11:13 apt-key
+-rwxr-xr-x 1 root root       43168 Dec  7 11:13 apt-mark
+-rwxr-xr-x 1 root root       43096 Dec  7 11:13 apt-sortpkgs
+lrwxrwxrwx 1 root root          19 Jun 18  2020 ar -> x86_64-linux-gnu-ar
+-rwxr-xr-x 1 root root       35032 Jan 18  2018 arch
+lrwxrwxrwx 1 root root          19 Jun 18  2020 as -> x86_64-linux-gnu-as
+lrwxrwxrwx 1 root root          18 May 16  2018 asan_symbolize -> asan_symbolize-6.0
+-rwxr-xr-x 1 root root       18342 Apr  5  2018 asan_symbolize-6.0
+-rwxr-xr-x 1 root root       18342 Nov 22  2018 asan_symbolize-7
+                                                      4,1           Top
+~/command-line-9-12-Marvalena$ vi
+~/command-line-9-12-Marvalena$ vi
+~/command-line-9-12-Marvalena$ vi
+~/command-line-9-12-Marvalena$ rm -f foo.txt
+~/command-line-9-12-Marvalena$ vi foo.txt
+~/command-line-9-12-Marvalena$ vi foo.txt
+~/command-line-9-12-Marvalena$ ls -l /usr/bin > ls-output.txt
+~/command-line-9-12-Marvalena$ vi foo.txt ls-output.txt
+2 files to edit
+~/command-line-9-12-Marvalena$ vi foo.txt
+~/command-line-9-12-Marvalena$ vi foo.txt
+~/command-line-9-12-Marvalena$ vi ls-output.txt
+~/command-line-9-12-Marvalena$
