@@ -1,1 +1,129 @@
+  
+#Course Concepts: Shell, prompt, text editor
+~/command-line-9-12-Marvalena$ printev | more
+bash: printev: command not found
+~/command-line-9-12-Marvalena$ printenv | more
+LC_ALL=en_US.UTF-8
+LD_LIBRARY_PATH=/home/runner/.apt/usr/lib/x86_64-linux-gnu:/home/runner/
+.apt/usr/lib/i386-linux-gnu:/usr/local/lib:/home/runner/.apt/usr/lib
+XDG_CONFIG_HOME=/config
+LANG=en_US.UTF-8
+DISPLAY=:0
+REPL_SLUG=command-line-9-12-Marvalena
+REPL_IMAGE=gcr.io/marine-cycle-160323/polygott:1613423236
+HOSTNAME=0946ea9e4c11
+REPL_ID=485fc07f-bf26-4a66-a911-14d4e30f3d06
+VIRTUAL_ENV=/opt/virtualenvs/python3
+USER=runner
+REPL_OWNER=Marvalena
+PROMPT_DIRTRIM=2
+PWD=/home/runner/command-line-9-12-Marvalena
+HOME=/home/runner
+CPATH=/home/runner/.apt/usr/include:/home/runner/.apt/usr/include/x86_64
+-linux-gnu
+REPLIT_DB_URL=https://kv.repl.it/v0/eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9
+.eyJleHAiOjE2MTQzOTY3MzgsImlhdCI6MTYxNDI4NTEzOCwiaXNzIjoiY29ubWFuIiwiZGF
+0YWJhc2VfaWQiOiI0ODVmYzA3Zi1iZjI2LTRhNjYtYTkxMS0xNGQ0ZTMwZjNkMDYifQ.L2RV
+7VDvfImXFQsATWtwilk6OAbutJHu2RWcN0WO3PyjKlchpcCzheq2nBk1PzkLCydH2qlhAN_r
+K29Qt7x2Cw
+LIBRARY_PATH=/home/runner/.apt/usr/lib/x86_64-linux-gnu:/home/runner/.ap
+t/usr/lib/i386-linux-gnu:/usr/local/lib:/home/runner/.apt/usr/lib
+APT_OPTIONS=-o debug::nolocking=true -o dir::cache=/tmp/apt/cache -o dir
+::state=/tmp/apt/state -o dir::etc::sourcelist=/tmp/apt/sources/sources.
+list
+TERM=xterm-256color
+REPL_LANGUAGE=python3
+SHLVL=1
+PYTHONPATH=/opt/virtualenvs/python3/lib/python3.8/site-packages
+CPPPATH=/home/runner/.apt/usr/include:/home/runner/.apt/usr/include/x86_
+64-linux-gnu
+PATH=/usr/local/go/bin:/opt/virtualenvs/python3/bin:/usr/GNUstep/System/
+Tools:/usr/GNUstep/Local/Tools:/home/runner/.apt/usr/bin:/usr/local/sbin
+:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PS1=\[\033[01;34m\]\w\[\033[00m\]\$ 
+~/command-line-9-12-Marvalena$ printenv USER
+runner
+~/command-line-9-12-Marvalena$ set | more
+APT_OPTIONS='-o debug::nolocking=true -o dir::cache=/tmp/apt/cache -o di
+r::state=/tmp/apt/state -o dir::etc::sourcelist=/tmp/apt/sources/sources
+.list'
+BASH=/bin/bash
+BASHOPTS=cmdhist:complete_fullquote:expand_aliases:extquote:force_fignor
+e:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="4" [2]="20" [3]="1" [4]="release" [5]="x86_6
+4-pc-linux-gnu")
+BASH_VERSION='4.4.20(1)-release'
+COLUMNS=72
+CPATH=/home/runner/.apt/usr/include:/home/runner/.apt/usr/include/x86_64
+-linux-gnu
+CPPPATH=/home/runner/.apt/usr/include:/home/runner/.apt/usr/include/x86_
+64-linux-gnu
+DIRSTACK=()
+DISPLAY=:0
+EUID=1000
+GROUPS=()
+HISTFILE=/home/runner/.bash_history
+HISTFILESIZE=500
+HISTSIZE=500
+HOME=/home/runner
+HOSTNAME=0946ea9e4c11
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+INCLUDE_PATH=/home/runner/.apt/usr/include:/home/runner/.apt/usr/include
+/x86_64-linux-gnu
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+LD_LIBRARY_PATH=/home/runner/.apt/usr/lib/x86_64-linux-gnu:/home/runner/
+.apt/usr/lib/i386-linux-gnu:/usr/local/lib:/home/runner/.apt/usr/lib
+LIBRARY_PATH=/home/runner/.apt/usr/lib/x86_64-linux-gnu:/home/runner/.ap
+~/command-line-9-12-Marvalena$ echo $HOME
+/home/runner
+~/command-line-9-12-Marvalena$ alias
+~/command-line-9-12-Marvalena$ foo="this is some"
+~/command-line-9-12-Marvalena$ echo $foo
+this is some
+~/command-line-9-12-Marvalena$ foo=$foo"txt."
+~/command-line-9-12-Marvalena$ echo $foo
+this is sometxt.
+~/command-line-9-12-Marvalena$ gedit some_file
+bash: gedit: command not found
+~/command-line-9-12-Marvalena$ nano .bashrc
+bash: nano: command not found
+~/command-line-9-12-Marvalena$ vi .bashrc
+~/command-line-9-12-Marvalena$ 
+~/command-line-9-12-Marvalena$ source .bashrc
+bash: .bashrc: No such file or directory
+~/command-line-9-12-Marvalena$ source vi .bashrc
+bash: source: /usr/bin/vi: cannot execute binary file
+~/command-line-9-12-Marvalena$ vi .bashrc
+~/command-line-9-12-Marvalena$ source .bashrc
+bash: .bashrc: No such file or directory
+~/command-line-9-12-Marvalena$ source vi.bashrc
+bash: vi.bashrc: No such file or directory
+~/command-line-9-12-Marvalena$ source vi .bashrc
+bash: source: /usr/bin/vi: cannot execute binary file
+~/command-line-9-12-Marvalena$ vi .bashrc
+~/command-line-9-12-Marvalena$ vi source .bashrc
+2 files to edit
+~/command-line-9-12-Marvalena$ vi .bashrc
+~/command-line-9-12-Marvalena$ source .bashrc
+~/command-line-9-12-Marvalena$ ll
+bash: ll: command not found
+~/command-line-9-12-Marvalena$ 11
+bash: 11: command not found
+#change umask to make directory sharing easier
+umask 0002
 
+#ignore duplicates in command history and increase history size to 1000 lines
+export HISTCONTROL=ignoredups
+export HISTSIZE=1000
+
+#add some helpful aliases
+alias 1.='ls -d .* --color=auto'
+alias 1.='ls -l --color=auto'  
